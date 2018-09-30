@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    >
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/activity_bbsdetail2_fanhui"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/fanhui_item"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帖 子 详 情"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/activity_bbsdetail2_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text=". . ."
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+    <!-- 中间的滚动布局 -->
+
+    <ScrollView
+        android:id="@+id/srollvie1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re1"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="51dp"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/activity_bbsdetail2_layou_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_4_lv_item" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gary" />
+
+                <TextView
+                    android:id="@+id/activity_bbsdetail2_bbsnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="评  论 (0)"
+                    android:textColor="#B8B8DC"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/gary" />
+            </LinearLayout>       
+         <ListView
+            android:id="@+id/activity_bbsdetail2_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 底部评论 -->
+
+    <LinearLayout
+        android:id="@+id/activity_bbsdetail2_linlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="1dp" >
+
+        <EditText
+            android:id="@+id/activity_bbsdetail2_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:gravity="center|left"
+            android:hint="我也来说一句..(250字之内)"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:padding="2dp"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/activity_bbsdetail2_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="4"
+            android:background="@drawable/bbs_gary_bt_bg"
+            android:text="评  论"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

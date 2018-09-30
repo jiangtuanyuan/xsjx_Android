@@ -1,0 +1,341 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/xsjx_top"
+        layout="@layout/xsjx_top" />
+
+    <!-- 车和教练的图片 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/Order_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioGroup
+            android:id="@+id/Order_RG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/Order_Rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:background="@drawable/start_rb"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/Order_Rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/start_rb"
+                android:button="@null"
+                android:enabled="false" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:orientation="vertical"
+        android:paddingTop="25dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="25dp"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/Order_tv_CarNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:text="车牌：湘A：15664" />
+          
+            
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="25dp"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/Order_tv_CarType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:text="车型：新款捷达" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="25dp"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/Order_tv_coach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:gravity="center"
+                android:text="教练：张三教练" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/Order_Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/order_coach_phone_img_item"
+                    android:clickable="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="25dp"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/Order_tv_DateDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:text="日期：2017-9-1 (星期三)" />
+        </LinearLayout>
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gary" />
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="25dp"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/Order_tv_changdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:text="场地:信息学院旁" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="25dp"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/Order_tv_DayTimeStr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:text="场次：上午场" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="25dp"
+                android:background="@color/blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:text="时间：" />
+
+            <Spinner
+                android:id="@+id/Order_Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/btn_bg"
+                android:popupBackground="#f0000000"
+                android:spinnerMode="dialog" />
+
+            <!--
+             <Button
+                android:id="@+id/Order_Time_Btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/btn_bg"
+                android:text="请选择时间段"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:textSize="12sp" />
+            
+            <Spinner 
+                 android:id="@+id/Order_Spinner"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                />
+            -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gary" />
+    </LinearLayout>
+
+    <!-- 预约和返回按钮 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gary" />
+
+            <Button
+                android:id="@+id/Btn_Order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:clickable="true"
+                android:text="预 约 该 场 次"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/Btn_Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:clickable="true"
+                android:text="返             回"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

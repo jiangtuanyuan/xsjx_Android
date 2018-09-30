@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+   
+    >
+<!-- 科目-->
+    <RadioGroup
+        android:id="@+id/Fragment2_all_RG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/Fragment2_all_RB_ke2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="科目二"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg" />
+
+        <RadioButton
+            android:id="@+id/Fragment2_all_RB_ke3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="科目三 "
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg" />
+    </RadioGroup>
+    <!--
+<Spinner 
+    android:id="@+id/Fragment2_all_date_Spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:spinnerMode="dialog"
+    android:background="@drawable/fragment2_all_date_spinner_bg"
+    />
+    -->
+<!-- 横向滚动列表 -->
+
+<LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" 
+      android:orientation="horizontal"
+     android:layout_gravity="center"
+      android:paddingTop="15dp"
+    >
+        <ImageView 
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/my_zuo"
+            android:layout_weight="1"
+            
+            />
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:scrollbars="none"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+           
+            >
+
+            <RadioGroup
+                android:id="@+id/Fragment2_all_ScrollView_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                >
+
+                <RadioButton
+                     android:id="@+id/Fragment2_all_RB_date1"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="2017-9-1 \n 星期四"
+                    android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                     android:id="@+id/Fragment2_all_RB_date2"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="2017-9-2 \n 星期四"
+                    android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                     android:id="@+id/Fragment2_all_RB_date3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="2017-9-3 \n 星期四"
+                    android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                     android:id="@+id/Fragment2_all_RB_date4"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="2017-9-4 \n 星期四"
+                    android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                     android:id="@+id/Fragment2_all_RB_date5"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="2017-9-5 \n 星期四"
+                    android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                     android:id="@+id/Fragment2_all_RB_date6"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="2017-9-6 \n 星期六"
+                    android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                    android:textSize="13sp" />
+            </RadioGroup>
+            
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ImageView 
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/my_you"
+            
+            />
+    </LinearLayout>
+<!-- 上下午场 -->
+   <RadioGroup
+        android:id="@+id/Fragment2_all_RG_Day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/Fragment2_all_Rb_Day1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="上午场"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg" />
+
+        <RadioButton
+            android:id="@+id/Fragment2_all_Rb_Day2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="下午场"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg" />
+        
+         <RadioButton
+            android:id="@+id/Fragment2_all_Rb_Day3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="夜间场"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg" />
+    </RadioGroup>
+    
+   <!-- 训练场地选择
+   <Spinner 
+       android:id="@+id/Fragment2_all_addr_Spinnr"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:background="@drawable/fragment2_all_date_spinner_bg"
+      
+       android:spinnerMode="dialog"
+       />
+    -->
+      <Button
+        android:id="@+id/fragment2_all_Trainingground"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="选择训练场地"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/blue" />
+
+  <GridView
+        android:id="@+id/fragment2_all_GridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_marginTop="10dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp" />
+  
+  
+  
+  
+   
+</LinearLayout>

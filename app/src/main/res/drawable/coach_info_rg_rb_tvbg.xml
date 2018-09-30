@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <selector  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_checked="true" android:drawable="@drawable/coach_info_rg_rb_tvbg2"></item>
+  <item android:drawable="@drawable/coach_info_rg_rb_tvbg1"></item>    
+
+ </selector>

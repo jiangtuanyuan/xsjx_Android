@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/coach_main_ke2_Re_nocoach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/coach_main_ke2_Re_notextv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="抱歉,您不是科目二教练,暂时无法查看科目二的预约情况!"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/coach_main_ke2_SwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+         >
+
+        <LinearLayout
+            android:id="@+id/coach_main_ke2_Li_yescoach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前季节: "
+                    android:textColor="@color/sblue"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/coach_main_ke2_Season"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="春季"
+                    android:textColor="@color/yellow"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/coach_main_ke2_ShowSeason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:text="查看季节预约时间表!"
+                        android:textColor="@drawable/fragment2_mycoach_bg"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/order_layout1"
+                layout="@layout/order_layout1" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="各位教练：\n1.请务必按照驾校规定的时间段内设置练车预约时间!\n2.请尽快处理有学员的预约!\n3.超过当晚十二点未处理的默认拒绝学员预约!"
+                android:textColor="@color/sblue" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

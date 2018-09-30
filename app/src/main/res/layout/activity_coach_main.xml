@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/coach_main_TopRelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue" >
+
+        <TextView
+            android:id="@+id/coach_main_TopLeftV"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/coach_main_menu_item"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="5dp"
+            android:text="星 胜 驾 校 一 教 练 端"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="1.5dp"
+            android:background="@color/gary" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/coach_main_FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/coach_main_TopRelayout"
+        android:paddingBottom="46dp" />
+
+    <RadioGroup
+        android:id="@+id/coach_main_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/coach_main_RadioButton1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/Coachzixun"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/coach_main_RadioButton2"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/CoachKe2"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/coach_main_RadioButton3"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/CoachKe3"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+            android:textSize="14sp" />
+        
+
+        <RadioButton
+            android:id="@+id/coach_main_RadioButton4"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/CoachCenten"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+            android:textSize="14sp" />
+        
+        <RadioButton
+            android:id="@+id/coach_main_RadioButton5"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="报 名 资 讯"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+            android:textSize="14sp" />
+        
+    </RadioGroup>
+
+</RelativeLayout>

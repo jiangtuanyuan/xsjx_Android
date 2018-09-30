@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="报名须知"
+       
+        android:textColor="@color/red" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="报名及考试注意事项:"
+                android:textSize="15sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="一、学员报名注意事项：\n
+1、您需要确认您是否有摩托车驾驶证（E证、D证）或在外校报过名等，如有您需要销档或到车辆所增驾等，您必须与办公人员及时说明；如有眩晕症、癫痫病等妨碍安全驾驶的疾病、有吸毒史、长期服务依赖性精神药品成瘾尚未戒除的不得报名申领驾驶证，相关问题您也必须与办公人员及时说明，也免造成您不必要的损失；\n 
+2、您需要出示有效的《身份证》原件并保证相关证件的合法性。\n
+3、您需要出具合格的《驾驶人考试体检证明》，或报名完成后及时将《驾驶人考试体检证明》交到办公室。（体检表出具的医院必须是公安部门指定医院：望城区：星城卫生院，长沙医学院，其他如湖南省脑科医院、长沙县人民医院、湖南省财贸医院、长沙东协盛医院、湖南省肿瘤医院、长沙县第二人民医院（榔梨医院）、长沙县第一人民医院。）\n
+4、如果您是外地（长沙、望城、浏阳、宁乡属于本地户口，其它的皆为外地户口）户口，您还需要办理《暂住证》，您可到居住地所在的派出所---户籍办办理（1、住户关系：学员提供本人身份证复印件、租房或购房合同、房东身份证复印件，到相应社区开房屋证明后将所有证件在工作日内送往当地派出所办理。2、工作（学生）关系：学员提供本人身份证复印件、盖章的工作证明（学生证明）送往当地派出所办理）\n
+5，注：报名的学员必须是持本省的手机号码。\n
+6、您还需要照相（用于驾驶证上的照片），请露出您美丽/帅气的五官（将刘海藏好），将耳钉、项链暂时妥善保存至安全处。\n
+7、报名流程完成后，请您用手机或电脑到网上下载“驾考宝典”或“驾校一点通”（科目一与科目三的安全文明驾驶题库均在此网站），进行驾驶员考试科目一的练习与模拟考试。如模拟考试达94分以上可到驾校电脑教室进行模拟考试，并通知驾校文员进行登记约考事宜。\n
+
+二、温馨提示\n
+1、学员报名之日起三年内有效。学员在科目一考试合格后，驾校将不再以任何方式告之学员训考事宜，请学员自已抓紧时间训练，早日取证！（如若学员技能证因此逾期失效，一切由学员自行担责，概与驾校无关。）\n
+2、请交费后保管好您的收费凭证，以后的相关考试与培训异动等都必须要出示收费证明，否则本校将不予以办理任何手续。\n"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/enroll_popo_cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我知道了"
+                android:textColor="@color/lightsteelblue"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/enroll_popo_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:text="确     定"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

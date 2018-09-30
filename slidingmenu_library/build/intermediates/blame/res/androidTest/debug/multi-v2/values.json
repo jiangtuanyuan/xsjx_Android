@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\AndroidStudioProjects\\xsjx_Android\\slidingmenu_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\AndroidStudioProjects\\xsjx_Android\\slidingmenu_library\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "1008",
+                        "endColumns": "42",
+                        "endOffsets": "1046"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "2747",
+                        "endColumns": "42",
+                        "endOffsets": "2785"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\蒋\\.gradle\\caches\\transforms-1\\files-1.1\\gridlayout-v7-23.4.0.aar\\89ce5d0294782f330506050bda435725\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "1751",
+                        "endColumns": "42",
+                        "endOffsets": "1789"
+                    },
+                    "to": {
+                        "startLines": "14",
+                        "startColumns": "4",
+                        "startOffsets": "2704",
+                        "endColumns": "42",
+                        "endOffsets": "2742"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\AndroidStudioProjects\\xsjx_Android\\slidingmenu_library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\AndroidStudioProjects\\xsjx_Android\\slidingmenu_library\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "1008",
+                        "endColumns": "42",
+                        "endOffsets": "1046"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "2747",
+                        "endColumns": "42",
+                        "endOffsets": "2785"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\蒋\\.gradle\\caches\\transforms-1\\files-1.1\\gridlayout-v7-23.4.0.aar\\89ce5d0294782f330506050bda435725\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "1751",
+                        "endColumns": "42",
+                        "endOffsets": "1789"
+                    },
+                    "to": {
+                        "startLines": "14",
+                        "startColumns": "4",
+                        "startOffsets": "2704",
+                        "endColumns": "42",
+                        "endOffsets": "2742"
+                    }
+                }
+            ]
+        }
+    ]
+}

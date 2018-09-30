@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/coach_info_bbs_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:gravity="center|left"
+            android:hint="来了总得说点什么吧...(250字之内)"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:padding="2dp"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/coach_info_bbs_bt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="5"
+            android:background="@drawable/bbs_gary_bt_bg"
+            android:text="留  言"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingTop="5dp"
+            android:background="@color/gary" />
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/coach_info_bbs_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:scrollbars="none" />
+    
+    
+
+</LinearLayout>

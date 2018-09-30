@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+ 
+    
+    <!-- 科目选择 
+
+    <RadioGroup
+        android:id="@+id/Fragment2_coach_RG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <RadioButton
+            android:id="@+id/Fragment2_coach_RB_ke2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="科目二"
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg" />
+
+        <RadioButton
+            android:id="@+id/Fragment2_coach_RB_ke3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="科目三 "
+            android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg" />
+    </RadioGroup>
+-->
+
+  <TextView
+                android:id="@+id/Fragment2_mycoach_MyKeShi_yesnokaifa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="暂 未 开 放!"
+                android:textColor="#937094"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textSize="16sp" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 我的课时 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/Fragment2_mycoach_MyKeShi_Labl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="我的课时:"
+                android:textColor="#937094"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Fragment2_mycoach_MyKeShi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- 我的教练 -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/Fragment2_mycoach_MyCoach_Labl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的教练:"
+                android:textColor="#937094"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Fragment2_mycoach_MyCoach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="李四教练"
+                android:textColor="@drawable/fragment2_mycoach_bg"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentLeft="true"
+         >
+
+        <TextView
+            android:id="@+id/Fragment2_mycoach_lab_changdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="训练场地:"
+            android:textColor="#937094"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/Fragment2_mycoach_changdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息学院旁"
+            android:clickable="true"
+           android:textColor="@drawable/fragment2_mycoach_bg"
+            android:textSize="13sp" />
+    </LinearLayout>
+    
+    <!-- 
+        <TextView
+            android:id="@+id/Fragment2_mycoach_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教学视频"
+            android:clickable="true"
+            android:textColor="@drawable/fragment2_mycoach_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textSize="13sp" />
+             -->
+    </RelativeLayout>
+    <!-- 表格 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment2_mycoach_table_height"
+        android:paddingTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/fragment2_mycoach_table_width"
+            android:layout_height="@dimen/fragment2_mycoach_table_height"
+            android:layout_weight="1"
+           
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fragment2_mycoach_left_dataDay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                android:gravity="center"
+                android:text="@string/fragment2_mycoach_table_left_textview_str"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+            <TextView
+                android:id="@+id/fragment2_mycoach_left_dataDay1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                android:gravity="center"
+                android:text="@string/fragment2_mycoach_table_left_textview_str1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+            <TextView
+                android:id="@+id/fragment2_mycoach_left_dataDay2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                android:gravity="center"
+                android:text="@string/fragment2_mycoach_table_left_textview_str2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+            <TextView
+                android:id="@+id/fragment2_mycoach_left_dataDay3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                android:gravity="center"
+                android:text="@string/fragment2_mycoach_table_left_textview_str3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:splitMotionEvents="false" >
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_head1"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                        android:gravity="center"
+                        android:text="@string/fragment2_mycoach_table_head_textview_date"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data11"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_green_bg1"
+                        android:gravity="center"
+                        android:text="@string/fragment2_mycoach_table_head_textview_data"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data12"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_red_bg"
+                        android:gravity="center"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data13"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:gravity="center"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_head2"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data21"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data22"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data23"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_head3"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data31"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data32"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data33"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_head4"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data41"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data42"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data43"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_head5"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data51"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data52"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data53"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_head6"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_blue_bg"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data61"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data62"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+
+                    <TextView
+                        android:id="@+id/fagment2_mycoach_tabel_data63"
+                        android:layout_width="@dimen/fragment2_mycoach_table_textview_width"
+                        android:layout_height="@dimen/fragment2_mycoach_table_textview_height"
+                        android:background="@drawable/fragment2_mycoach_table_textview_gary_bg"
+                        android:textSize="@dimen/fragment2_mycoach_table_textview_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <!-- 表格END -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="温馨提示:\n
+                         1.每成功预约一次,我的课时 节数减少1节\n
+                         2.预约是否成功需要自己的教练确定！\n
+                         3.当 我的课时 为0时，便不可预约！\n
+                         4.若有疑问，请拨打客服：0746-959648！"
+        android:textColor="@color/blue"
+        android:textSize="13sp" />
+</LinearLayout>
+    
+</LinearLayout>

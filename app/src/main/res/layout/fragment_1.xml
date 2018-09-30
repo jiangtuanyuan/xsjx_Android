@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragmen_1_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioGroup
+            android:id="@+id/fragment_1_RG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/fragment_1_Rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:background="@drawable/start_rb"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/fragment_1_Rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/start_rb"
+                android:button="@null"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/fragment_1_Rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/start_rb"
+                android:button="@null"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/fragment_1_Rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/start_rb"
+                android:button="@null"
+                android:enabled="false" />
+        </RadioGroup>
+       <TextView 
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/gary"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+
+   
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/fragment_1_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="1dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

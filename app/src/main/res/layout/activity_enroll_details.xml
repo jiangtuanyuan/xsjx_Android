@@ -1,0 +1,296 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WebActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:padding="12dip"
+        android:textColor="@color/white" >
+
+        <ImageView
+            android:id="@+id/Enroll_details_fanhui"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fanhui_item" />
+
+        <TextView
+            android:id="@+id/Enroll_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:paddingTop="15dp"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 驾照类型 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/Enroll_details_lab_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="驾照类型:" />
+
+                <TextView
+                    android:id="@+id/Enroll_details_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/Enroll_details_lab_type"
+                    android:text="C1"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/Enroll_details_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="经 济 班"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/Enroll_details_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Enroll_details_class"
+                    android:layout_centerHorizontal="true"
+                    android:text="(加载中..)"
+                    android:textColor="@color/sblue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/Enroll_details_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="3480.00 ¥(RMB)"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/green" />
+
+            <!-- 类型介绍 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型介绍:" />
+
+                <TextView
+                    android:id="@+id/Enroll_details_type_introduced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="C1也简称手动挡手动挡，C1可以开自动挡的车，C1是驾驶证准驾车型的一种代号，根据《机动车驾驶证申领和使用规定》（公安部令第123号），C1是指准驾小型、微型载客汽车和轻型、微型载货汽车以及轻型、微型专项作业车的驾驶证，同时也准予驾驶C2、C3、C4的准驾车型。"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gary" />
+            <!-- 考试内容 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="考试内容:" />
+
+                <TextView
+                    android:id="@+id/Enroll_details_kaoshi_introduced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="试科目包括:\n交通法规及相关知识(科目一)、\n场地驾驶(科目二)、\n道路驾驶(科目三)、\n安全文明驾驶常识(科目四)等四项。"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!-- 合格标准 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合格标准: " />
+
+                <TextView
+                    android:id="@+id/Enroll_details_hege_introduced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="每个科目100分，其中:\n
+科目一：90分以为为合格\n
+科目二：80分以上为合格\n
+科目三：90分以为为合格\n
+科目四：必须达到90分以上为合格!"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+            <!-- 包括费用 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="包括费用: " />
+
+                <TextView
+                    android:id="@+id/Enroll_details_feiyong_introduced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="1.体检费200元。\n
+2.接送费 500元.\n
+3.科目二培训费 1000元.\n
+4.科目三 培训费1000元.
+                    "
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!-- 不包括费用 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不包括费用: " />
+
+                <TextView
+                    android:id="@+id/Enroll_details_nofeiyong_introduced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="所有科目补考费用.."
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!-- 服务项目 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务项目: " />
+
+                <TextView
+                    android:id="@+id/Enroll_details_fuwu_introduced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="1.科目二12学时。\n
+2.科目三12学时。\n
+3.一对一练车.\n
+4.约车时间周一至周末\n
+5.考试上课定点接送，最多6个月出证。"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gary" />
+
+            <Button
+                android:id="@+id/Enroll_details_Enrollbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_bg"
+                android:text="报  名"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

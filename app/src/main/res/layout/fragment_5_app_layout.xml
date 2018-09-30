@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gary"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="14sp" 
+        android:text="该APP目前还在继续开发当中,如果您遇到任何BUG或者想参与一起开发!,请联系给我,谢谢大佬! \n联系方式:QQ:330844495 (备注:反馈BUG) \n"
+        android:textColor="@color/blue_user"
+        />
+
+    
+    
+    
+</RelativeLayout>

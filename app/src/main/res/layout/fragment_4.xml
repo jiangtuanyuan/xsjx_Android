@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/fragment_4_Posting"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_bg"
+        android:text="发   帖"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RadioGroup
+            android:id="@+id/fragment_4_RG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/fragment_4_Rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/fragment_4_Rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="学员"
+                android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/fragment_4_Rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="教练"
+                android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/fragment_4_Rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="游客"
+                android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/fragment_4_Rb5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="匿名"
+                android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/fragment_4_Rb6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="其它"
+                android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/fragment_4_Rb7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fragment2_all_ke2ke3_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/fragment2_all_ke2ke3_textcolor_bg"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue" />
+    <TextView
+        android:id="@+id/fragment_4_view_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gary"
+        android:gravity="center"
+        android:text="论 坛 关 闭!"
+        android:visibility="gone" />
+    
+    
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fragment_4_swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/fragment_4_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.xsjx"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        encoding "utf-8"
+    }
+
+
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+
+    compile project(':library')
+    compile project(':slidingmenu_library')
+    compile files('libs/okhttp-2.7.5.jar')
+    compile files('libs/okio-1.13.0.jar')
+    compile files('libs/systembartint-1.0.4.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/xUtils-3.0.jar')
+    compile files('libs/libammsdk.jar')
+
+    //视频播放
+    compile 'com.github.maning0303:MNVideoPlayer:V1.0.4'
+
+}

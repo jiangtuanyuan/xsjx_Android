@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Logdo_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" 
+    >
+
+    <!-- <include layout="@layout/xsjx_top" /> -->
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:onClick="MyOnClick"
+        android:paddingTop="20dp"
+        android:text="注  册"
+        android:textColor="@drawable/registration_bg"
+        android:textSize="13sp" />
+    
+    
+
+   <LinearLayout
+        android:id="@+id/linyout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/username" />
+
+            <EditText
+                android:id="@+id/logo_username"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:hint="请输入用户名"
+                android:maxLength="10"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/userpwd" />
+
+            <EditText
+                android:id="@+id/logo_userpwd"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/Logo_Box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:hint="记住密码"
+                android:checked="true"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Logo_ForgetPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:clickable="true"
+                android:onClick="MyOnClick"
+                android:text="忘记密码?"
+                android:textColor="@drawable/forgot_password_bg"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/LogDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="登     陆"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+  
+    </LinearLayout>
+    <TextView
+        android:id="@+id/TiShi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="温馨提示:\n
+                         1.用户名为注册时的姓名！\n
+                         2.密码为注册时的密码！\n
+                         3.若有疑问，请拨打客服：0746-959648！"
+        android:textColor="@color/blue"
+        android:textSize="12sp" />
+</RelativeLayout>

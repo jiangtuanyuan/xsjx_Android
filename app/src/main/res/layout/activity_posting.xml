@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:padding="12dip" >
+
+        <ImageView
+            android:id="@+id/Posting_fanhui"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fanhui_item"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:paddingTop="15dp"
+            android:text="发表主题帖"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Posting_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="发 表"
+            android:textColor="@color/gary" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/Posting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_bg"
+        android:hint="标题1~25字内(必选)"
+        android:maxLength="25"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Posting_conten"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="left|top"
+        android:hint="内容1~1024字内..(必选)"
+        android:maxLength="1024"
+        android:padding="8dp"
+        android:textSize="15sp" />
+
+    <GridView
+        android:id="@+id/Posting_noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="当前身份:"
+            android:textColor="#b8b8dc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/Posting_sf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="游客"
+            android:textColor="#b8b8dc"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="当前发帖模式为:"
+            android:textColor="#b8b8dc"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/Posting_ms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="审核发帖!(需审核)"
+            android:textColor="#b8b8dc"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <CheckBox
+            android:id="@+id/Posting_niming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            
+            android:text="匿 名"
+            android:textColor="@color/lightsteelblue"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

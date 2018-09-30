@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xsjx">
+
+    <!-- Android程序就支持了多种分辨率，那么就可以得到正确的物理尺寸了 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <!-- Android程序就支持了多种分辨率，那么就可以得到正确的物理尺寸了 -->
+
+
+    <!-- Normal权限添加(系统默认开启的权限) -->
+
+    <uses-permission android:name="android.permission.REAO_EXTERNAL_STORAGE" />
+    <!-- 读外部存储的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <!-- 格式化可移动文件系统，比如格式化清空SD卡权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序访问Wi-Fi网络状态信息 -->
+
+
+    <!-- Dangerous权限添加(需要动态获取的权限) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 拨打电话 允许一个程序初始化一个电话拨号不需通过拨号用户界面需要用户确认 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取定位 程序访问精良位置(如GPS) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 内置外置SD卡读写权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问电话状态... -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+    &lt;!&ndash; 微信需要的权限 &ndash;&gt;
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    -->
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/xsjxlog"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LogoActivity"
+            android:label="@string/title_activity_logo"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/title_activity_start"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- android:launchMode="singleTask"   去掉第一个At的启动模式 -->
+        <activity
+            android:name=".RunActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Re_SuccessActivity"
+            android:label="@string/title_activity_re__success"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/title_activity_order"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".WebActivity"
+            android:exported="true"
+            android:label="@string/title_activity_web"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BBSdetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/title_activity_bbsdetails"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".EnrollActivity"
+            android:label="@string/title_activity_enroll"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EnrollDetailsActivity"
+            android:label="@string/title_activity_enroll_details"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CheckStandActivity"
+            android:label="@string/title_activity_check_stand"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CoachInfoActivity"
+            android:label="@string/title_activity_coach_info"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LogoDoActivity"
+            android:label="@string/title_activity_logo_do"/>
+        <activity
+            android:name="com.example.Coach.Activity.CoachLogoDoActivity"
+            android:label="@string/title_activity_coach_logo_do"/>
+        <activity
+            android:name=".PostingActivity"
+            android:label="@string/title_activity_posting"/>
+        <activity
+            android:name=".VideoActivity"
+            android:label="@string/title_activity_video"/>
+        <activity
+            android:name=".VideoPlayActivity"
+            android:label="@string/title_activity_video_play"/>
+        <activity
+            android:name=".PostingAlbumActivity"
+            android:label="@string/title_activity_posting_album"/>
+        <activity android:name=".ImagePagerActivity"/>
+
+        <!-- 借用 -->
+        <activity
+            android:name="com.example.testpic.PublishedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.example.testpic.ImageGridActivity"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.example.testpic.TestPicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.example.testpic.PhotoActivity"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+        <!-- 服务注册 -->
+        <service android:name="com.example.service.XsjxService" />
+        <!-- 服务注册 -->
+        <activity
+            android:name=".UserHomeActivity"
+            android:label="@string/title_activity_user_home" />
+        <activity
+            android:name="com.example.Coach.Activity.CoachMainActivity"
+            android:label="@string/title_activity_coach_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Coach.Activity.CoachOrderKe2Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/title_activity_coach_order_ke2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 微信分享 -->
+        <activity android:name="com.example.wxapi.WXEntryActivity"
+                  android:exported="true"
+            />
+    </application>
+
+</manifest>

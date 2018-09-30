@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/Coach/Activity/CoachLogoDoActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/Coach/Activity/CoachMainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/Coach/Utils/CoachInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/Coach/Utils/DaySeasonDate.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/Coach/adapter/OrderStuShowadapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/Coach/adapter/OrderaAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/adapter/BBSAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/adapter/BBSDisAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/adapter/CoachInfoStuAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/adapter/GvAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/adapter/MessageAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/adapter/PostingAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/dao/NewsDo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/dao/SqliteDo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/dao/UserInfoDo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/entity/Fragmen2_Mycoach_Table_ShowEntity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/entity/Fragment2_all_GV_CarEntity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/CoachMain_FragmentKe2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/CoachMain_FragmentKe3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/FragMent_2_all.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/FragMent_4.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/internet/AccessInternet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/json/entity/PComments.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/json/entity/Run_img_json_entity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/service/XsjxService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/AndroidWorkaround.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/CircleImageView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/CustomVideoView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/EditTextClearTools.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/Filepath.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/ImageUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/PermissionUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/ToastUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/UrlGoImg.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/UserInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/Utils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/utils/XCRoundImageView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/EnrollActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/LogoDoActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/MainApplication.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/RunActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/UserHomeActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/VideoActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/VideoPlayActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/xsjx/WebActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/slidingmenu_library/src/main/java/com/jeremyfeinstein/slidingmenu/lib/CustomViewAbove.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

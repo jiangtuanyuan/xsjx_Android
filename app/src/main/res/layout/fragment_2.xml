@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+    
+   <RadioGroup
+        android:id="@+id/Fragment2_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#5677cf"
+        android:gravity="center_vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/Fragment2_rg_rb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="科目二"
+            android:textColor="@drawable/fragment2_all_coach_bg" />
+
+        <RadioButton
+            android:id="@+id/Fragment2_rb_Mycoach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="科目三"
+             android:gravity="center"
+             android:textColor="@drawable/fragment2_all_coach_bg" />
+
+     
+    </RadioGroup>
+    
+     <TextView
+        android:id="@+id/Fragment2_tv_mark"
+        android:layout_width="155dp"
+        android:layout_height="3dp"
+        android:background="@color/sblue" />
+    
+     <android.support.v4.view.ViewPager
+        android:id="@+id/FragMent2_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" 
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        />
+     
+    
+
+</LinearLayout>

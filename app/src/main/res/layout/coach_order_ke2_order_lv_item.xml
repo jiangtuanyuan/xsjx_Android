@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coach_order_ke2_order_lv_item_li"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:gravity="center_horizontal"
+    android:padding="7dp" >
+
+    <LinearLayout
+        android:id="@+id/leftlinearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/coach_order_ke2_order_lv_item_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:00"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一" />
+
+        <TextView
+            android:id="@+id/coach_order_ke2_order_lv_item_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:30"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/coach_order_ke2_order_lv_item_orderMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="3人申请" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true" >
+
+        <RelativeLayout
+            android:id="@+id/coach_order_ke2_order_lv_item_chakanRE"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0.3dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/coach_order_ke2_order_lv_item_chakan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/cehuabj"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="查 看"
+                android:textColor="@color/green"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/coach_order_ke2_order_lv_item_chakan_Msg"
+                android:layout_width="@dimen/red_circle_width"
+                android:layout_height="@dimen/red_circle_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/red_circle_textsize"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/coach_order_ke2_order_lv_item_delet"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/coach_order_ke2_order_lv_item_chakanRE"
+            android:background="@drawable/cehuadele"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="删 除"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

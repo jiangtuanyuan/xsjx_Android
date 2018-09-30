@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/fragment2_all_gv_carimg"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/car"
+         />
+
+    <TextView
+        android:id="@+id/fragment2_all_gv_carNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="1"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/fragment2_all_gv_carCoach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="1"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/fragment2_all_gv_carPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="4人"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/fragment2_all_gv_carAdvPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="2人"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/fragment2_all_gv_carRemainPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="2人"
+        android:textColor="@color/blue" />
+
+</LinearLayout>

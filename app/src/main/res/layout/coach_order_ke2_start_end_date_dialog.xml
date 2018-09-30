@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gary"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sblue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="添加预约时间段"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gary"
+        android:orientation="horizontal"
+        android:paddingTop="2dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sblue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="开始时间:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sblue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="结束时间:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gary"
+        android:orientation="horizontal"
+        android:paddingTop="2dp" >
+
+        <TimePicker
+            android:id="@+id/coach_order_ke2_start_end_date_dialog_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:calendarViewShown="false"
+            android:clickable="false"
+            android:timePickerMode="spinner" />
+
+        <TimePicker
+            android:id="@+id/coach_order_ke2_start_end_date_dialog_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:calendarViewShown="false"
+            android:clickable="false"
+            android:timePickerMode="spinner" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/coach_order_ke2_start_end_date_dialog_time_leng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="练车时长:  0 分钟!"
+        android:textSize="12sp" />
+    
+    <Button
+        android:id="@+id/coach_order_ke2_start_end_date_dialog_addtiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_bg"
+        android:text="添  加"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</LinearLayout>

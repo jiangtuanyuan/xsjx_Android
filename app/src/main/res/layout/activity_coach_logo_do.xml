@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_user" >
+
+    <RelativeLayout
+        android:id="@+id/CoachLogoDo_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#0071BC"
+        android:padding="12dip"
+        android:textColor="@color/white" >
+
+        <ImageView
+            android:id="@+id/CoachLogoDo_fanhui"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fanhui_item" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:paddingTop="15dp"
+            android:text="教练登陆"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/CoachLogoDo_relativeLayout1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/CoachLogoDo_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/background_user" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_wihte_frame" >
+
+            <TextView
+                android:id="@+id/CoachLogoDo_textView1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:lines="1"
+                android:padding="1dp"
+                android:text="教练名"
+                android:textSize="11sp" />
+
+            <View
+                android:id="@+id/CoachLogoDo_view1"
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/CoachLogoDo_textView1"
+                android:background="#EEEFFF" />
+
+            <EditText
+                android:id="@+id/CoachLogoDo_CoachName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/CoachLogoDo_view1"
+                android:background="@drawable/transparent"
+                android:ems="19"
+                android:hint="请输入您的名字"
+                android:inputType="text"
+                android:maxLength="10"
+                android:padding="1dp"
+                android:textSize="12sp" >
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/CoachLogoDo_del_name"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/text_del"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/CoachLogoDo_relativeLayout2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/CoachLogoDo_relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@color/background_user" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_wihte_frame" >
+
+            <TextView
+                android:id="@+id/CoachLogoDo_textView2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:maxLength="16"
+                android:padding="1dp"
+                android:text="密    码"
+                android:textSize="11sp" />
+
+            <View
+                android:id="@+id/CoachLogoDo_view2"
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/CoachLogoDo_textView2"
+                android:background="#EEEFFF" />
+            
+              <EditText
+                android:id="@+id/CoachLogoDo_CoachPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/CoachLogoDo_view2"
+                android:background="@drawable/transparent"
+                android:digits="@string/filter_vcode"
+                android:ems="19"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:padding="1dp"
+                android:textSize="12sp" >
+
+             
+            </EditText>
+
+            <ImageView
+                android:id="@+id/CoachLogoDo_del_pwd"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/text_del"
+                android:visibility="invisible" />
+
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/CoachLogoDo_loginButton"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/CoachLogoDo_relativeLayout2"
+        android:layout_alignRight="@+id/CoachLogoDo_relativeLayout2"
+        android:layout_below="@+id/CoachLogoDo_relativeLayout2"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/shape_touch_bule_button"
+        android:padding="1dp"
+        android:text="登   录"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*请各位教练不要将自己的密码给任何人!"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        />
+
+</RelativeLayout>

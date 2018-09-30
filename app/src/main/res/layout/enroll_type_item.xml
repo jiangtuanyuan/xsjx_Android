@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/enroll_item_LinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/layout_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp" >
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            
+            android:background="@color/steelblue" />
+
+        <TextView
+            android:id="@+id/enroll_item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:text="C1"
+            android:textColor="@color/blue"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/enroll_item_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:text="经济班"
+            android:textColor="@color/green"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/enroll_item_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/my_you"
+            android:gravity="center_vertical"
+            android:text="3480.00 ¥"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

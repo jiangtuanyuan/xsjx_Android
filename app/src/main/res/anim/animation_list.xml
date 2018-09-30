@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/logodoxing"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/logodosheng"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/logodojia"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/logodoxiao"
+        android:duration="500"/>
+
+</animation-list>
+<!-- 帧动画   循环使用三张图片 -->

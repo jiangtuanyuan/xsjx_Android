@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:splitMotionEvents="false"
+    >
+
+    <RadioGroup
+        android:id="@+id/fragment3_RG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+     
+        android:padding="10dp" >
+ <!-- 禁止多点触屏  android:splitMotionEvents="false"    -->
+        <RadioButton
+            android:id="@+id/fragment3_enroll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="在 线 报 名>>\n\n(价格优惠,班车接送,包学包过,五星教练)"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/fragment3_Video_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="教 学 视 频>>\n\n(科二科三,自制视频,易看易学,易学易会)"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/fragment3_order_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="预 约 考 试>>\n\n(http://hn.122.gov.cn/m/login)"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</RelativeLayout>

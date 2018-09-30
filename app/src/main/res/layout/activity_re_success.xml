@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:padding="20dp"
+    android:background="@color/Logdo_bg"
+    >
+ 
+    <TextView 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/regis_ok"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:text=" 注 册 成 功 !"
+        android:textColor="@color/blue"
+        />
+<Button 
+     android:id="@+id/re_success_logdo"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text=" 一 键 登 陆 "
+     android:background="@drawable/btn_bg"
+     android:textColor="@color/white"
+     android:textSize="15sp"
+     android:layout_marginTop="20dp"
+      android:onClick="MyOnClick"
+    />
+
+<Button 
+    android:id="@+id/re_sucees_return"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="返          回"
+     android:background="@drawable/btn_bg"
+     android:textColor="@color/white"
+     android:textSize="15sp"
+     android:layout_marginTop="20dp"
+     android:onClick="MyOnClick"
+    />
+</LinearLayout>

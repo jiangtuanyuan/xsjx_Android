@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue" >
+
+        <ImageView
+            android:id="@+id/enroll_info_x"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/fanhui_item" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="填写报名信息"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/gary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="当前用户名:" />
+
+        <TextView
+            android:id="@+id/enroll_info_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="张山"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="真 实 姓 名 :" />
+
+        <EditText
+            android:id="@+id/enroll_info_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:gravity="center|left"
+            android:hint="请如实填写此处信息!(必填)"
+            android:maxLength="5"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="身份证号码:" />
+
+        <EditText
+            android:id="@+id/enroll_info_et_card"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:digits="0123456789xyzXYZ"
+            android:gravity="center|left"
+            android:hint="请如实填写此处信息!(必填)"
+            android:inputType="number"
+            android:maxLength="18"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="手 机 号 码 :" />
+
+        <EditText
+            android:id="@+id/enroll_info_et_tel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:gravity="center|left"
+            android:hint="请如实填写此处信息!(必填)"
+            android:maxLength="11"
+            android:padding="5dp"
+             android:inputType="number"
+            android:singleLine="true"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="微   信   号 :" />
+
+        <EditText
+            android:id="@+id/enroll_info_et_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:gravity="center|left"
+            android:hint="请输入您的微信号...(选填)"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="Q    Q    号 :" />
+
+        <EditText
+            android:id="@+id/enroll_info_et_qq"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:gravity="center|left"
+            android:hint="请输入您的QQ号...(选填)"
+            android:maxLength="12"
+            android:padding="5dp"
+             android:inputType="number"
+            android:singleLine="true"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="您是信大的学生吗?" />
+
+        <RadioGroup
+            android:id="@+id/enroll_info_Rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/enroll_info_Rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/enroll_info_Rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:checked="true"
+                android:text="否"
+                android:textSize="11sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gary" />
+
+    <CheckBox
+        android:id="@+id/enroll_info_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="我已确定报名信息无误!"
+        android:textColor="@color/lightsteelblue"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/enroll_info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="7dp"
+        android:background="@drawable/shape_touch_bule_button"
+        android:text="提  交"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>
